@@ -1,0 +1,13 @@
+# Data files
+*.fastq.gz
+*.bam
+*.sam
+*.h5ad
+
+# Python virtual environment
+venv/
+__pycache__/
+
+# Secrets
+.env
+credentials.json
