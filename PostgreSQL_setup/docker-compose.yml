@@ -1,0 +1,10 @@
+services:
+  db:
+    image: postgres:16
+    container_name: scrnaseq-metadata-db
+    env_file:
+      - ../.env
+    ports:
+      - "${POSTGRES_PORT:-5432}:5432"
+    volumes:
+      - ./pgdata:/var/lib/postgresql/data
