@@ -15,3 +15,10 @@ credentials.json
 # PostgreSQL data
 PostgreSQL_setup/pgdata/
 PostgreSQL_setup/note.txt
+PostgreSQL_setup/start-postgresql.sh
+
+# MinIO data
+MINIO_setup/docker-compose.yml
+MINIO_setup/start-minio.sh
+MINIO_setup/
+.gitignore
