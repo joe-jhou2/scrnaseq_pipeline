@@ -12,13 +12,21 @@ __pycache__/
 .env
 credentials.json
 
+# MinIO data
+MINIO_setup/minio.sbatch
+MINIO_setup/start-minio.sh
+MINIO_setup/minio_setup_note.md
+
+# Nextflow files
+Nextflow_setup/nextflow_setup_note.md
+Nextflow_setup/simple_daemon_test_note.md
+
 # PostgreSQL data
 PostgreSQL_setup/pgdata/
-PostgreSQL_setup/note.txt
+PostgreSQL_setup/PostgreSQL_setup_note.md
 PostgreSQL_setup/start-postgresql.sh
 
-# MinIO data
-MINIO_setup/docker-compose.yml
-MINIO_setup/start-minio.sh
-MINIO_setup/
+# Sample Registration Streamlit
+Sample_Registration_Streamlit/db_test.py
+
 .gitignore

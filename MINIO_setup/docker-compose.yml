@@ -1,0 +1,15 @@
+services:
+  minio:
+    image: minio/minio
+    container_name: scrnaseq-data-lake
+    env_file:
+      - ../.env
+    ports:
+      - "9000:9000"   # API port
+      - "9001:9001"   # Console port
+    command: server /data --console-address ":9001"
+    volumes:
+      - minio_data:/data
+
+volumes:
+  minio_data:
