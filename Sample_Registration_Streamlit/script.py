@@ -4,17 +4,20 @@ Streamlit Web Form for Sample Registration
 Run with: streamlit run sample_registration_form.py
 """
 import os
-from dotenv import load_dotenv
 import streamlit as st
-# import psycopg2
 from sqlalchemy import create_engine, text, bindparam
 import pandas as pd
-# from pathlib import Path
 from datetime import datetime
+# import psycopg2
+# from pathlib import Path
 
 # Load environment variables (customize this as needed)
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    pass
 
-load_dotenv()
 POSTGRES_USER=os.getenv('POSTGRES_USER')
 POSTGRES_PASSWORD=os.getenv('POSTGRES_PASSWORD')
 POSTGRES_DB=os.getenv('POSTGRES_DB')
